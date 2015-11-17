@@ -1,1 +1,7 @@
 ru:
+  labels:
+    users:
+      already_registered: "Вместе с тобой зарегистрировались"
+      sign_in_with_vk: "Войти с "
+      you_are_already_registered: "Поздравляю, ты уже зарегистрировался!"
+      wait_other: "Жди, когда другие подтянуться"
