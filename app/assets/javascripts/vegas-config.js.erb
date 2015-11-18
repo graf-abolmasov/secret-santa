@@ -1,0 +1,12 @@
+$(function(){
+  $("body").vegas({
+    timer: false,
+    overlay: true,
+    slides: [
+      { src: "<%=asset_path('slide1.jpg')%>"},
+      { src: "<%=asset_path('slide2.jpg')%>"},
+      { src: "<%=asset_path('slide3.jpg')%>"},
+      { src: "<%=asset_path('slide4.jpg')%>"}
+    ]
+  });
+});
