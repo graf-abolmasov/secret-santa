@@ -8,10 +8,10 @@
     -if @users.count > 0
       .row
         h3.text-center = t('labels.users.already_registered')
-        - @users.each do |user|
-          .col-xs-3.col-md-2
-            a.thumbnail href="#{user.url}" target="_blank"
-              img src="#{user.photo_url}" alt="#{user.name}"
+        #registered_users
+          - @users.each do |user|
+              a.thumbnail.invisible href="#{user.url}" target="_blank"
+                img style="width: 100%" src="#{user.photo_url}" alt="#{user.name}"
   - else
     .row.text-center
       = link_to user_omniauth_authorize_url(:vkontakte), class: 'btn btn-primary btn-lg -sign-in' do

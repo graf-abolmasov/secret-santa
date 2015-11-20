@@ -3,33 +3,28 @@
 @import "bootstrap";
 @import "vegas";
 
-// make all images responsive by default
-img {
-  @extend .img-responsive;
-  margin: 0 auto;
-}
-
 a.-sign-in {
   margin-top: 10%;
   margin-bottom: 10%;
 }
 
-html, body {
-  height: 100%;
+.invisible {
+  visibility: hidden;
 }
 
-.overlay {
-  height: 100%;
-  width: 100%;
+#registered_users {
+  position: relative;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.vegas-overlay {
   background-color: rgba(31, 31, 31, 0.6);
 }
 
 .container {
-  padding-left: 3%;
-  padding-right: 3%;
+  padding-top: 50px;
   color: white;
 }
 
-.row {
-  padding-top: 70px;
-}

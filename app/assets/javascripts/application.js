@@ -13,7 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap-sprockets
+//= require imagesloaded.pkgd.min
 //= require vegas
+//= require wookmark.min
 //= require_tree .
 
 
