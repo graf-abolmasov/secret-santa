@@ -1,8 +1,8 @@
 class DistributionService
 
-  def initialize(user)
+  def initialize(user, vk_client)
     @organizer = user
-    @client ||= VkontakteApi::Client.new(ENV['API_TOKEN'])
+    @client = vk_client
   end
 
   def associate!
@@ -20,8 +20,6 @@ class DistributionService
       associate!
     end
   end
-
-  private
 
   def notify_all(santas, victims)
     santas.each_with_index { |santa, idx| notify_user(santa, victims[idx]) }
